@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: "Noto Sans Devanagari", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+
+  .font-mono-num {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-invoice-area,
+  #print-invoice-area * {
+    visibility: visible;
+  }
+
+  #print-invoice-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  #print-invoice-area.thermal-58 {
+    width: 58mm !important;
+    max-width: 58mm !important;
+    font-size: 10px !important;
+  }
+
+  #print-invoice-area.thermal-80 {
+    width: 80mm !important;
+    max-width: 80mm !important;
+    font-size: 11px !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

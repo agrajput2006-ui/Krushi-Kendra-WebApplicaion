@@ -1,0 +1,8 @@
+{
+  "name": "सुराणा कृषी केंद्र (Surana Krushikendra)",
+  "description": "सुराणा कृषी केंद्र, कासमपुरा (ता. पाचोरा, जि. जळगांव) — बिलिंग, स्टॉक, ग्राहक खाते व रिपोर्ट्स.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
